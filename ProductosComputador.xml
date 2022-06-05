@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="ProductosComputador.xsl" ?>
 <!DOCTYPE Productos SYSTEM "ProductosComputador.dtd">
-<Productos>
+<Productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ProductosComputador.xsd">
     <Producto>
         <Raton>
             <Codigo>C0001</Codigo>
@@ -17,8 +19,13 @@
     <Producto>
         <Monitor>
             <Codigo>C0003</Codigo>
-            <Descripcion>Sencillo</Descripcion>
+            <Descripcion>Fácil de usar</Descripcion>
         </Monitor>
+    </Producto>
+    <Producto>
+        <Raton>
+            <Codigo>C0004</Codigo>
+        </Raton>
     </Producto>
 
 </Productos>

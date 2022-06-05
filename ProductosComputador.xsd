@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Productos"/>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Productos" type="TiposProductos"/>
   <xs:complexType name="Raton">
     <xs:sequence>
-      <xs:element type="xs:string" name="Codigo"/>
-      <xs:element type="xs:string" name="Nombre"/>
-      <xs:element type="xs:string" name="Descripcion"/>
+      <xs:element name="Codigo" type="xs:string">
+      </xs:element>
+      <xs:element name="Nombre" minOccurs="0" type="xs:string"/>
+      <xs:element name="Descripcion" minOccurs="0" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="ProductoType">
+  <xs:complexType name="TipoProducto">
     <xs:sequence>
       <xs:element type="Raton" name="Raton" minOccurs="0"/>
       <xs:element type="Teclado" name="Teclado" minOccurs="0"/>
@@ -17,19 +18,19 @@
   </xs:complexType>
   <xs:complexType name="Teclado">
     <xs:sequence>
-      <xs:element type="xs:string" name="Codigo"/>
-      <xs:element type="xs:string" name="Nombre"/>
+      <xs:element type="xs:string" name="Codigo" minOccurs="0"/>
+      <xs:element type="xs:string" name="Nombre" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Monitor">
     <xs:sequence>
-      <xs:element type="xs:string" name="Codigo"/>
-      <xs:element type="xs:string" name="Descripcion"/>
+      <xs:element type="xs:string" name="Codigo" minOccurs="0"/>
+      <xs:element type="xs:string" name="Descripcion" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="Productos">
+  <xs:complexType name="TiposProductos">
     <xs:sequence>
-      <xs:element name="Producto" maxOccurs="unbounded" minOccurs="1"/>
+      <xs:element type="TipoProducto" name="Producto" maxOccurs="unbounded" minOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
