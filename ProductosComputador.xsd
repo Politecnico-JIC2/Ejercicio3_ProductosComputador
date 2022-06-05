@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Productos"/>
+  <xs:complexType name="Raton">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Codigo"/>
+      <xs:element type="xs:string" name="Nombre"/>
+      <xs:element type="xs:string" name="Descripcion"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductoType">
+    <xs:sequence>
+      <xs:element type="Raton" name="Raton" minOccurs="0"/>
+      <xs:element type="Teclado" name="Teclado" minOccurs="0"/>
+      <xs:element type="Monitor" name="Monitor" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Teclado">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Codigo"/>
+      <xs:element type="xs:string" name="Nombre"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Monitor">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Codigo"/>
+      <xs:element type="xs:string" name="Descripcion"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Productos">
+    <xs:sequence>
+      <xs:element name="Producto" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

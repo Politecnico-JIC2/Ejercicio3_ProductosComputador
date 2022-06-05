@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Productos SYSTEM "ProductosComputador.dtd">
+<Productos>
+    <Producto>
+        <Raton>
+            <Codigo>C0001</Codigo>
+            <Nombre>RA450</Nombre>
+            <Descripcion>Ligero</Descripcion>
+        </Raton>
+    </Producto>
+    <Producto>
+        <Teclado>
+            <Codigo>C0002</Codigo>
+            <Nombre>KEY300</Nombre>
+        </Teclado>
+    </Producto>
+    <Producto>
+        <Monitor>
+            <Codigo>C0003</Codigo>
+            <Descripcion>Sencillo</Descripcion>
+        </Monitor>
+    </Producto>
+
+</Productos>
