@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da2b1147-9b0c-43a1-803e-c499c422438b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductosComputador.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductosComputador.xsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductosComputador.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProductosComputador.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProductosComputador.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/ProductosComputador.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

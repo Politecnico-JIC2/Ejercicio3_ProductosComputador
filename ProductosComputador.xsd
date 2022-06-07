@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Productos" type="TiposProductos"/>
-  <xs:complexType name="Raton">
-    <xs:sequence>
-      <xs:element name="Codigo" type="xs:string">
-      </xs:element>
-      <xs:element name="Nombre" minOccurs="0" type="xs:string"/>
-      <xs:element name="Descripcion" minOccurs="0" type="xs:string"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="TipoProducto">
-    <xs:sequence>
-      <xs:element type="Raton" name="Raton" minOccurs="0"/>
-      <xs:element type="Teclado" name="Teclado" minOccurs="0"/>
-      <xs:element type="Monitor" name="Monitor" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Teclado">
-    <xs:sequence>
-      <xs:element type="xs:string" name="Codigo" minOccurs="0"/>
-      <xs:element type="xs:string" name="Nombre" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Monitor">
-    <xs:sequence>
-      <xs:element type="xs:string" name="Codigo" minOccurs="0"/>
-      <xs:element type="xs:string" name="Descripcion" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="TiposProductos">
-    <xs:sequence>
-      <xs:element type="TipoProducto" name="Producto" maxOccurs="unbounded" minOccurs="1"/>
-    </xs:sequence>
-  </xs:complexType>
-</xs:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Productos" type="TiposProductos"/>
+  <xsd:complexType name="Raton">
+    <xsd:sequence>
+      <xsd:element name="Codigo" type="xsd:string">
+      </xsd:element>
+      <xsd:element name="Nombre" minOccurs="0" type="xsd:string"/>
+      <xsd:element name="Descripcion" minOccurs="0" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TipoProducto">
+    <xsd:sequence>
+      <xsd:element type="Raton" name="Raton" minOccurs="0"/>
+      <xsd:element type="Teclado" name="Teclado" minOccurs="0"/>
+      <xsd:element type="Monitor" name="Monitor" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Teclado">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="Codigo" minOccurs="0"/>
+      <xsd:element type="xsd:string" name="Nombre" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Monitor">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="Codigo" minOccurs="0"/>
+      <xsd:element type="xsd:string" name="Descripcion" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TiposProductos">
+    <xsd:sequence>
+      <xsd:element type="TipoProducto" name="Producto" maxOccurs="unbounded" minOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
